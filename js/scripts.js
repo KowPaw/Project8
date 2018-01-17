@@ -8,6 +8,7 @@ $(function() {
   function searchCountries(e) {
     var countryName = $('#country-name').val();
     if(!countryName.length) countryName = 'Poland';
+    countriesList.empty();
     $.ajax({
       url: url + countryName,
       method: 'GET',
