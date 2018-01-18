@@ -18,7 +18,6 @@ $(function() {
   }
 
   function showCountriesList(resp) {
-    countriesList.empty();
     resp.forEach(function(item) {
       var newCountry = $('<li>').appendTo(countriesList);
       $('<img>').attr('src', item.flag).appendTo(newCountry);
